@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Clasificador De Residuos Ecologico Con IA ♻️</title>
+
+<link rel="stylesheet" href="style.css">
+
+
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.12.0/dist/tf.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8.5/dist/teachablemachine-image.min.js"></script>
+
+
+</head>
+
+
+<body>
+
+
+<div class="contenedor">
+
+<h1>♻️ Clasificador De Residuos Ecologico Con IA</h1>
+
+<p>
+Sistema separadora de deseshechos
+</p>
+
+
+<div class="botones">
+
+<button onclick="iniciar()">
+📷 Conectar Cámara
+</button>
+
+
+<button onclick="conectarArduino()">
+🔌 Conectar Arduino
+</button>
+
+</div>
+
+
+
+<div id="camara"></div>
+
+
+
+<div class="resultado">
+
+<h2>Objeto detectado:</h2>
+
+<h3 id="resultado">
+Esperando...
+</h3>
+
+</div>
+
+
+
+<div class="estado">
+
+<p id="arduino">
+Arduino: Desconectado
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
